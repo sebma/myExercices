@@ -24,10 +24,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp
+  name: hello-world-service
 spec:
   selector:
-    app: myapp
+    app: hello-world
   ports:
-  - port: <Port>
-    targetPort: <Target Port>
+  - port: 443
+    targetPort: 3000
