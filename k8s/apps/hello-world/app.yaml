@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: hello-world
-        image: dockercloud-hello-world
+        image: dockercloud/hello-world
         resources:
           limits:
             memory: "128Mi"
