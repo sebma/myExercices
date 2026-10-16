@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: hello-world
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app: hello-world
   template:
     metadata:
       labels:
-        app: myapp
+        app: hello-world
     spec:
       containers:
-      - name: myapp
-        image: <Image>
+      - name: hello-world
+        image: dockercloud-hello-world
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
-        - containerPort: <Port>
+        - containerPort: 3000
